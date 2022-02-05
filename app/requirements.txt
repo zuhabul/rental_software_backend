@@ -1,0 +1,15 @@
+Pillow
+unidecode
+pyjwt
+geopy
+python-decouple
+djangorestframework
+boto3
+django-storages
+python-decouple
+whitenoise
+django-cors-headers
+drf-yasg
+django-oauth-toolkit
+django-admin-interface
+django-currentuser
