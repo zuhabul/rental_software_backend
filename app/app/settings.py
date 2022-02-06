@@ -1,6 +1,10 @@
 import os
 from pathlib import Path
 from decouple import config
+import mimetypes
+mimetypes.add_type("text/css", ".css", True)
+mimetypes.add_type("text/html", ".html", True)
+
 
 
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
@@ -165,6 +169,15 @@ AUTH_PASSWORD_VALIDATORS = [
         "NAME": "django.contrib.auth.password_validation.NumericPasswordValidator",
     },
 ]
+
+SWAGGER_SETTINGS = {
+   'USE_SESSION_AUTH': False
+}
+
+REDOC_SETTINGS = {
+   'LAZY_RENDERING': False,
+   'USE_SESSION_AUTH': False
+}
 
 
 # Internationalization
